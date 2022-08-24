@@ -1,25 +1,20 @@
 import './App.css';
+import Header from './header.jsx'
+import Footer from "./footer.jsx";
+import MoreAboutMe from './PropTest';
 
-const App = () => {
 
-const address = {
-  forename: "John",
-  surname: "Smith",
-  firstLine: "8 Lions head",
-  city: "Manchester",
-  postcode: "M1 1AA"
-
-}
+function App () {
 return (
-   <div>
-    <header className="App-Header"></header>
-      <h2>forename - {address.forename}</h2>
-      <h2>surname - {address.surname}</h2>
-      <h2>Line 1 - {address.firstLine}</h2>
-      <h2>city - {address.city}</h2>
-      <h2>postcode - {address.postcode}</h2>
-   </div>
+  <div className="App">
+    <Header />
+    <MoreAboutMe nameProp={"Brendon"} ageProp={"22"} hobby1Prop={"football"} faveCerealProp={"nesquik choco balls"}></MoreAboutMe>
+    <Footer />
+  </div>
 );
 }
+
 export default App;
+
+
 
